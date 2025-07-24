@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url(../fonts/Gilroy-Black.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url(../fonts/Gilroy-Black.woff);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url(../fonts/Gilroy-Black.ttf);
+    font-weight: 800;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url(../fonts/Gilroy-Black.woff);
+    font-weight: 800;
+}
+

@@ -1,14 +1,96 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sidcup Family Golf</title>
-</head>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidcup Family Golf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/fonts.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <div id="nav">
+      <img src="assets/logo-white.svg" alt="logo-img" />
+      <h4>toptracer range</h4>
+      <h4>golf lessons</h4>
+      <h4>adventure golf</h4>
+      <h4>cafe</h4>
+      <h4>events</h4>
+    </div>
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
+    <video
+      autoplay
+      muted
+      loop
+      src="assets/SFG-Website-Header-Video.mp4"
+    ></video>
+    <div id="main">
+      <div id="page1">
+        <h1>Eat. Drink. Play.</h1>
+        <h2>Welcome to Sidcup Family Golf!</h2>
+        <p>
+          Sidcup Family Golf is a Toptracer driving range and crazy golf venue
+          in Sidcup, South East London. Passionate about technology, player
+          development and making golf fun and accessible to everyone.
+        </p>
+      </div>
+      <div id="page2">
+        <div id="scroller">
+          <div class="scroller-in">
+            <h4>toptracer range</h4>
+            <h4>golf lessons</h4>
+            <h4>adventure golf</h4>
+            <h4>cafe</h4>
+            <h4>events</h4>
+          </div>
+          <div class="scroller-in">
+            <h4>toptracer range</h4>
+            <h4>golf lessons</h4>
+            <h4>adventure golf</h4>
+            <h4>cafe</h4>
+            <h4>events</h4>
+          </div>
+        </div>
+        <div id="about-us">
+          <img src="assets/aboutus1.avif" alt="golf img" />
+          <div id="about-us-in">
+            <h3>about us</h3>
+            <p>
+              Home to a 46-bay, multi-tier, floodlit driving range, powered by
+              Toptracer Range technology. Complimented by a practice green and
+              bunker, coffee shop and American Golf Store. There truly is
+              something for everyone as we also boast two outdoor 18-hole
+              dinosaur themed crazy golf courses.
+            </p>
+          </div>
+          <img src="assets/aboutus2.avif" alt="golf img" />
+        </div>
+        <div id="card-container">
+          <div class="card" id="card1"></div>
+          <div class="card" id="card2"></div>
+          <div class="card" id="card3"></div>
+        </div>
 
-</body>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+      integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
 </html>

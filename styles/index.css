@@ -1,0 +1,218 @@
+@import url(fonts.css);
+/* TOPOGRAPHY */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#nav {
+  width: 100%;
+  height: 145px;
+  position: fixed;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+  padding: 0 150px;
+  z-index: 100;
+}
+#nav h4 {
+  text-transform: uppercase;
+}
+
+#nav img {
+  height: 75px;
+}
+
+#cursor {
+  z-index: 9;
+  width: 20px;
+  height: 20px;
+  background-color: #95c11e;
+  border-radius: 50%;
+  position: fixed;
+  /* transition: all linear 0.5s; */
+  
+}
+#cursor-blur {
+  z-index: 9;
+  width: 500px;
+  height: 500px;
+  background-color: #96c11e49;
+  border-radius: 50%;
+  position: fixed;
+  filter: blur(40px);
+}
+
+video {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  /* position: absolute; */
+  position: fixed;
+  z-index: -1;
+}
+/* -----------------------MAIN SECTION----------------------------- */
+#main {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+/* ---------------PAGE1-------------- */
+#page1 {
+  height: 100vh;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#page1 h1 {
+  font-size: 140px;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 20px;
+  position: relative;
+}
+#page1 h1::before {
+  content: "Eat. Drink. Play.";
+  position: absolute;
+  z-index: -1;
+  color: black;
+  top: -6px;
+  left: -6px;
+  -webkit-text-stroke: 2px #95c11e;
+}
+#page1 h2 {
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+#page1 p {
+  font-weight: 400;
+  width: 40%;
+  font-size: 20px;
+}
+
+/* ----------PAGE2------------ */
+#page2 {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#scroller {
+  display: inline-block;
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 10;
+}
+#scroller::-webkit-scrollbar {
+  display: none;
+}
+.scroller-in {
+  display: inline-block;
+  /* white-space: nowrap; */
+  animation-name: scroll;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#scroller h4 {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 130px;
+  margin-right: 20px;
+  color: transparent;
+  font-family: "Gilroy", "sans-serif";
+  font-weight: 800;
+  color: black;
+  -webkit-text-stroke: 1px #95c11e;
+  transition: all linear 0.5s;
+}
+#scroller h4:hover {
+  color: #95c11e;
+}
+
+/* scroll animations */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#about-us {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 100px;
+  text-align: center;
+  padding: 0 100px;
+  margin-top: 150px;
+  z-index: 10;
+  position: relative;
+}
+#about-us img {
+  width: 220px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+#about-us-in {
+  max-width: 50%;
+}
+#about-us-in h3 {
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  font-weight: 900;
+}
+#about-us-in p {
+  line-height: 30px;
+  font-size: 24px;
+}
+
+/* img card */
+
+#card-container {
+  margin-top: 10vh;
+  height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 10;
+  position: relative;
+}
+
+.card {
+  border-radius: 20px;
+  width: 25%;
+  height: 80%;
+  background-size: cover;
+}
+#card1 {
+  background-image: url(../assets/hero-4-1024x1024.avif);
+}
+#card2 {
+  background-image: url(../assets/home-lessons-1024x682.avif);
+}
+#card3 {
+  background-image: url(../assets/home-toptracer-1024x682.avif);
+}
