@@ -40,7 +40,6 @@ body {
   border-radius: 50%;
   position: fixed;
   /* transition: all linear 0.5s; */
-  
 }
 #cursor-blur {
   z-index: 9;
@@ -103,6 +102,7 @@ video {
   font-weight: 400;
   width: 40%;
   font-size: 20px;
+  color: white;
 }
 
 /* ----------PAGE2------------ */
@@ -183,10 +183,12 @@ video {
   text-transform: uppercase;
   margin-bottom: 50px;
   font-weight: 900;
+  color: white;
 }
 #about-us-in p {
   line-height: 30px;
   font-size: 24px;
+  color: white;
 }
 
 /* img card */
@@ -199,6 +201,14 @@ video {
   align-items: center;
   z-index: 10;
   position: relative;
+  margin-bottom: 100px;
+}
+#card-container img {
+  width: 250px;
+  position: absolute;
+  top: 0;
+  left: 55px;
+  z-index: 9;
 }
 
 .card {
@@ -206,6 +216,12 @@ video {
   width: 25%;
   height: 80%;
   background-size: cover;
+  z-index: 10;
+  position: relative;
+}
+.card:hover {
+  transform: rotate3d(0.5, 0.5, 0, 15deg);
+  transition: all ease-in 0.2s;
 }
 #card1 {
   background-image: url(../assets/hero-4-1024x1024.avif);
@@ -215,4 +231,208 @@ video {
 }
 #card3 {
   background-image: url(../assets/home-toptracer-1024x682.avif);
+}
+
+.overlay {
+  background-color: #95c11e;
+  width: 100%;
+  height: 100%;
+  padding: 20% 5%;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 20px;
+  opacity: 0;
+}
+.card .overlay:hover {
+  opacity: 1;
+
+  transition: all linear 0.2s;
+}
+.overlay h4 {
+  color: black;
+  font-size: 38px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.overlay p {
+  line-height: 28px;
+}
+
+#offer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30vh;
+  background: linear-gradient(to bottom right, #95c21e, #5d9f3c);
+  z-index: 10;
+  position: relative;
+}
+#offer img {
+  height: inherit;
+  width: 200px;
+  object-fit: cover;
+}
+#offer h4 {
+  color: black;
+  font-weight: 900;
+  font-size: 32px;
+  text-transform: uppercase;
+  width: 50%;
+  text-align: center;
+  /* color: white; */
+}
+#page3 {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+}
+#page3 img {
+  width: 100px;
+  position: absolute;
+}
+#colon-left {
+  top: 20%;
+  left: 15%;
+}
+#colon-right {
+  bottom: 20%;
+  right: 15%;
+}
+#page3 p {
+  width: 60%;
+  font-size: 32px;
+  font-weight: 900;
+  text-align: center;
+  color: white;
+}
+/* ---------------PAGE4--------------- */
+
+#page4 {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+  z-index: 10;
+  position: relative;
+}
+#page4 h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: inherit;
+  background-color: #95c11e;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: black;
+  font-size: 36px;
+  font-weight: 900;
+  text-transform: uppercase;
+  transition: all ease 0.5s;
+}
+#page4 > h2 {
+  font-size: 108px;
+  font-weight: 800;
+  color: black;
+  position: absolute;
+  z-index: 9;
+  top: 12%;
+  font-family: "Gilroy";
+  -webkit-text-stroke: 2px #fff;
+  text-transform: uppercase;
+}
+#page4 .card-container {
+  z-index: 10;
+  position: relative;
+  width: 25%;
+  height: 40%;
+  border-radius: 20px;
+}
+.card-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+#page4 h4:hover {
+  background-color: transparent;
+  color: white;
+}
+
+/* ----------FOOTER-------- */
+#footer {
+  height: 45vh;
+  background: linear-gradient(to bottom right, #95c21e, #5d9f3c);
+  text-transform: uppercase;
+  position: relative;
+  z-index: 10;
+
+}
+#footer-dot-img {
+  z-index: 8;
+  top: 10%;
+  left: -10%;
+  position: absolute;
+  width: 40%;
+  height: 90%;
+}
+#footer-logo {
+  width: 130px;
+  position: absolute;
+  z-index: 9;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+/* #footer h2{
+  color: black;
+} */
+#footer h2,
+p {
+  color: black;
+  transition: all ease 0.4s;
+}
+#footer h2:hover{
+  color:#fff
+}
+
+
+#footer-links {
+  color: black;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4%;
+}
+#footer-links h2 {
+  font-size: 28px;
+  font-weight: 900;
+}
+#footer-links p {
+  font-size: 20px;
+  font-weight: 600;
+}
+#footer-links > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#copyright {
+  display: flex;
+  justify-content: center;
+  gap: 20%;
+}
+#copyright p {
+  font-weight: 500;
+  font-size: 14px;
+  transition: all ease 0.4s;
+}
+#copyright p:hover{
+  color: #fff;
 }
