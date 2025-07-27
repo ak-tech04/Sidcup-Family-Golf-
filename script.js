@@ -88,21 +88,28 @@ colonTL.from("#colon-right", {
     scrub: 2,
   },
 });
-gsap.from("#page4>h2",{
-  x: 100,
-  opacity: 0,
-  scrollTrigger: {
-    trigger:"#page4",
-    scroller:"body",
-    start: "top 80%",
-    end: 'center 50%',
-    
-    // markers: true,
-    scrub: 2,
-  }
-})
+if(screen.width> 1200){
 
-// gsap.from('#page4 img', {
-//   scale: 1,
-  
-// })
+  gsap.from("#page4>h2",{
+    x: 70,
+    opacity: 0,
+    scrollTrigger: {
+      trigger:"#page4",
+      scroller:"body",
+      start: "top 80%",
+      end: 'center 50%',
+      scrub: 2,
+    }
+  })
+  gsap.from('#page4 .card-container', {
+    x:-70,
+    opacity:0,
+    scrollTrigger: {
+      trigger:"#page4",
+      scroller:'body',
+      start:'top 80%',
+      end:'center 60%',
+      scrub:2,
+    }
+  })
+}
