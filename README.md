@@ -27,6 +27,13 @@ Once the page is loaded, you can:
 *   Hover over navigation links and other elements to see interactive effects.
 *   View the different sections for information about the golf facility.
 
+## Screenshots
+<img width="1920" height="961" alt="1" src="https://github.com/user-attachments/assets/4cb772bb-99d0-445e-bcc8-b4e0971d7a97" />
+<img width="1920" height="961" alt="2" src="https://github.com/user-attachments/assets/f5f18f2e-8ef7-4dc7-a0ef-27bc598d9004" />
+<img width="1920" height="961" alt="3" src="https://github.com/user-attachments/assets/44c4d7fd-3243-4d38-8c3b-c5f41724eb80" />
+<img width="1920" height="961" alt="4" src="https://github.com/user-attachments/assets/2f8cd6a8-7829-4440-a723-ced2dc487fbf" />
+<img width="1920" height="961" alt="5" src="https://github.com/user-attachments/assets/5d9f52be-5abc-4cb1-a349-9363f872b2be" />
+
 ## 🧠 Learning Concepts
 
 This project was an opportunity to learn and reinforce several key web development concepts:
